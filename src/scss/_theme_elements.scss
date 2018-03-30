@@ -1,3 +1,26 @@
-.container {
-    background-color: $theme-color-1;
+header {
+  position:relative;
+  h1 {
+    display: inline-block;
+    line-height:50px;
+    margin-bottom: 0;
+  }
+  #menu {
+    display: inline-block;
+    text-align: right;
+    right: 0;
+    top: 0;
+    position: absolute;
+    ul {
+      margin:0;
+      padding:0;
+      li {
+        list-style:none;
+        display: inline-block;
+        padding: 5px;
+        line-height:50px;
+        font-size:20px;
+      }
+    }
+  }
 }
