@@ -1,11 +1,15 @@
 import React from "react";
-import ReactDOM from "prop-types";
+import PropTypes from "prop-types";
 const Menu = ({ links }) => (
   <div id="menu">
     <ul>
-      links.forEach(function(link) {
-        <li><a href="link.href">link.text</a></li>
-      });
+      {links.map(function(link) {
+        return (
+          <li>
+            <a href={link.href}>{link.text}</a>
+          </li>
+        )
+      })}
     </ul>
   </div>
 );
