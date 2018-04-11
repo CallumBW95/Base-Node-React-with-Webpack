@@ -21,9 +21,19 @@ class Header extends Component {
       {
         text:'link 3',
         href:'/link_3',
+        sub: [
+          {
+            text:'sub link 1',
+            href:'/sub_link_1',
+          },
+          {
+            text:'sub link 2',
+            href:'/sub_link_2',
+          },
+        ]
       },
     ];
-    console.log(links);
+    // console.log(links);
     return (
       <header>
         <h1>Logo</h1>
